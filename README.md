@@ -1,7 +1,9 @@
 # Decorate decorator
 
-This decorator will return property descriptor which value is the result of
-applying function from first argument to decorated function and rest supplied arguments.
+This decorator will return property descriptor which value will be the result of
+invoking function from first decorator's argument with:
+ - decorated function as first argument
+ - rest decorator's arguments
 
 Example
 ```
