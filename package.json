@@ -1,5 +1,5 @@
 {
-  "name": "decorate-decorator",
+  "name": "apply-decorator",
   "version": "0.0.1",
   "description": "decorate function with result of applying custom function",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edli/decorate-decorator.git"
+    "url": "git+https://github.com/edli/apply-decorator.git"
   },
   "keywords": [
     "react",
@@ -20,7 +20,7 @@
   "author": "Aleksey Rubtsov (https://github.com/edli/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/edli/decorate-decorator/issues"
+    "url": "https://github.com/edli/apply-decorator/issues"
   },
-  "homepage": "https://github.com/edli/decorate-decorator#readme"
+  "homepage": "https://github.com/edli/apply-decorator#readme"
 }

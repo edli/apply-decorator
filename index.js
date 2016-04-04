@@ -5,7 +5,7 @@
  * ```
  * import debounce from 'debounce';
  * class Component {
- *   @decorate(debounce, 250)
+ *   @apply(debounce, 250)
  *   method () {}
  * }
  * ```
@@ -16,12 +16,12 @@
 Object.defineProperty(exports, '__esModule', {
   value: true
 });
-exports['default'] = decorate;
+exports['default'] = apply;
 
 /*
  * decorate function with result of applying custom function
  */
-function decorate() {
+function apply() {
     let [ func, ...args ] = arguments;
 
     return function(target, name, descriptor) {

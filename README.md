@@ -1,4 +1,4 @@
-# Decorate decorator
+# Apply decorator
 
 This decorator will return property descriptor which value will be the result of
 invoking function from first decorator's argument with:
@@ -20,7 +20,7 @@ class Component {
 
 After:
 class Component {
-    @decorate(debounce, 250)
+    @apply(debounce, 250)
     debouncedMethod() {
         console.log('i am debounced');
     }
@@ -38,23 +38,23 @@ Make sure you apply callback before autobind-decorator as it returns accessor de
 Example:
 ```
 Bad:
-    @decorate(someFunc)
+    @apply(someFunc)
     @autobind
     handleSomething() { ... }
 
 Good:
     @autobind
-    @decorate(someFunc)
+    @apply(someFunc)
     handleSomething() { ... }
 ```
 
 Installation:
 
-    % npm install decorate-decorator
+    % npm install apply-decorator
 
 Example:
 
-    import decorate from 'decorate-decorator'
+    import apply from 'apply-decorator'
 
     let count = 0;
     const logToConsole = function(original) {
@@ -69,7 +69,7 @@ Example:
         return <div onClick={ this.handleClick } />;
       }
 
-      @decorate(logToConsole)
+      @apply(logToConsole)
       handleClick() {
         // do useful work here
       }
