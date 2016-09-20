@@ -21,11 +21,9 @@ exports['default'] = apply;
 /*
  * decorate function with result of applying custom function
  */
-function apply() {
-    let [ func, ...args ] = arguments;
-
+function apply(func, ...args) {
     return function(target, name, descriptor) {
-        let value = func.apply(undefined, [].concat(descriptor.value, args));
+        const value = func.apply(undefined, [].concat(descriptor.value, args));
 
         return {
             configurable: true,
